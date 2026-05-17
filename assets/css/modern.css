@@ -1,0 +1,98 @@
+/* Modern enhancements */
+.hero { position: relative; overflow: hidden; }
+.hero::before {
+    content: '';
+    position: absolute;
+    top: -200px; right: -200px;
+    width: 600px; height: 600px;
+    background: radial-gradient(circle, rgba(37,99,235,0.15) 0%, transparent 60%);
+    border-radius: 50%;
+    pointer-events: none;
+}
+.hero::after {
+    content: '';
+    position: absolute;
+    bottom: -150px; left: -150px;
+    width: 500px; height: 500px;
+    background: radial-gradient(circle, rgba(5,150,105,0.08) 0%, transparent 60%);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.section:nth-child(even) {
+    background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
+}
+
+.section:nth-child(odd) {
+    background: #ffffff;
+}
+
+/* Card hover enhancements */
+.grid-3 > a:hover > .card,
+.grid-4 > a:hover > .card {
+    box-shadow: 0 20px 40px -12px rgba(37,99,235,0.12);
+    transform: translateY(-3px);
+    border-color: #2563EB;
+}
+
+/* Stats gradient text */
+.stats-new .stat-num {
+    background: linear-gradient(135deg, #0f2a43, #2563EB);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Category card icon styling */
+.grid-4 > a.card .card-body {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 16px 18px !important;
+}
+
+/* Request card styling */
+.request-card {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.request-card:hover {
+    border-color: #2563EB;
+    box-shadow: 0 20px 40px -12px rgba(37,99,235,0.1);
+}
+
+/* Supplier card styling */
+.supplier-card {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.supplier-card:hover {
+    border-color: #2563EB;
+    box-shadow: 0 20px 40px -12px rgba(37,99,235,0.1);
+}
+
+/* Why section card hover */
+[data-why] div[style*="border:1px solid #e2e8f0"] {
+    transition: all 0.25s ease;
+}
+[data-why] div[style*="border:1px solid #e2e8f0"]:hover {
+    box-shadow: 0 12px 32px -8px rgba(0,0,0,0.08);
+    transform: translateY(-2px);
+    border-color: #2563EB !important;
+}
+
+/* Section header improvements */
+.section-header h2 {
+    font-size: 1.8rem;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+}
+
+/* Search bar glass effect */
+.search-bar {
+    background: rgba(255,255,255,0.95) !important;
+    backdrop-filter: blur(12px);
+}
+
+/* Footer gradient */
+.footer {
+    background: linear-gradient(135deg, var(--primary) 0%, #1a3d5c 100%);
+}

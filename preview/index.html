@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<title>EthioMarket - Find Suppliers or Post What You Need</title></head><body>    <nav class="navbar">
+        <div class="container nav-inner">
+            <a href="index.html" class="logo">
+                <span class="logo-icon"></span>
+                <span>EthioMarket</span>
+            </a>
+            <button class="mobile-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Toggle menu">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+            </button>
+            <div class="nav-links">
+                <a href="directory.html">Suppliers</a>
+                <a href="requests.html">Requests</a>
+                <a href="post-request.html" class="btn btn-sm btn-accent" style="color:#fff;">+ Post a Request</a>
+                <a href="login.html">Login</a>
+                <a href="register.html" class="btn btn-sm btn-outline">Sign Up</a>
+            </div>
+        </div>
+    </nav>
+    <div class="main-content">
+
+<section class="hero">
+    <div class="container">
+        <h1>Find Suppliers or Post What You Need</h1>
+        <p>Search verified Ethiopian businesses, compare suppliers, or post a request and let sellers come to you.</p>
+        <div class="hero-buttons">
+            <a href="directory.html" class="btn btn-lg btn-accent">Search Suppliers</a>
+            <a href="post-request.html" class="btn btn-lg btn-outline">Post a Request</a>
+            <a href="register.html" class="btn btn-lg btn-outline">List Your Business</a>
+        </div>
+    </div>
+</section>
+
+<section class="search-bar">
+    <div class="container">
+        <form action="directory.html" method="GET" class="search-form">
+            <input type="text" name="q" placeholder="Search: Toyota bumper, cement, office chairs..." value="">
+            <select name="category">
+                <option value="">All Categories</option>
+                <option value="1">Car Parts &amp; Accessories</option>
+                <option value="2">Construction Materials</option>
+                <option value="3">Printing &amp; Packaging</option>
+                <option value="4">Hotel &amp; Restaurant Supplies</option>
+                <option value="5">Office Supplies</option>
+                <option value="6">Furniture</option>
+                <option value="7">Electronics</option>
+                <option value="8">Machinery &amp; Tools</option>
+            </select>
+            <select name="location">
+                <option value="">All Locations</option>
+                <option value="1">Bole</option>
+                <option value="2">Kazanchis</option>
+                <option value="3">Piassa</option>
+                <option value="4">Merkato</option>
+                <option value="5">CMC</option>
+                <option value="6">Megenagna</option>
+            </select>
+            <button type="submit" class="btn btn-primary">Search</button>
+        </form>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="section-header">
+            <h2>Popular Categories</h2>
+            <a href="categories.html">View All &rarr;</a>
+        </div>
+        <div class="grid-4">
+            <a href="directory.html" class="card"><div class="card-body" style="display:flex;align-items:center;gap:14px;padding:16px 18px;"><span style="flex-shrink:0;width:44px;height:44px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border-radius:12px;display:flex;align-items:center;justify-content:center;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#475569" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><path d="M9 17h6"/><circle cx="17" cy="17" r="2"/></svg></span><span style="font-weight:600;font-size:0.95rem;color:#0f172a;">Car Parts &amp; Accessories</span></div></a></a>
+            <a href="directory.html" class="card"><div class="card-body" style="display:flex;align-items:center;gap:14px;padding:16px 18px;"><span style="flex-shrink:0;width:44px;height:44px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border-radius:12px;display:flex;align-items:center;justify-content:center;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#475569" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="8" rx="1"/><path d="M17 14v7"/><path d="M7 14v7"/><path d="M17 3v3"/><path d="M7 3v3"/><path d="M10 14 2.3 6.3"/><path d="m14 6 7.7 7.7"/><path d="m8 6 8 8"/></svg></span><span style="font-weight:600;font-size:0.95rem;color:#0f172a;">Construction Materials</span></div></a></a>
+            <a href="directory.html" class="card"><div class="card-body" style="display:flex;align-items:center;gap:14px;padding:16px 18px;"><span style="flex-shrink:0;width:44px;height:44px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border-radius:12px;display:flex;align-items:center;justify-content:center;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#475569" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="m16 3 2 2 4-4"/></svg></span><span style="font-weight:600;font-size:0.95rem;color:#0f172a;">Printing &amp; Packaging</span></div></a></a>
+            <a href="directory.html" class="card"><div class="card-body" style="display:flex;align-items:center;gap:14px;padding:16px 18px;"><span style="flex-shrink:0;width:44px;height:44px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border-radius:12px;display:flex;align-items:center;justify-content:center;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#475569" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2Z"/><path d="m9 16 .348-.24c1.465-1.013 3.84-1.013 5.304 0L15 16"/><path d="M8 7h.01"/><path d="M16 7h.01"/><path d="M12 7h.01"/><path d="M12 11h.01"/><path d="M8 11h.01"/><path d="M16 11h.01"/></svg></span><span style="font-weight:600;font-size:0.95rem;color:#0f172a;">Hotel &amp; Restaurant Supplies</span></div></a></a>
+            <a href="directory.html" class="card"><div class="card-body" style="display:flex;align-items:center;gap:14px;padding:16px 18px;"><span style="flex-shrink:0;width:44px;height:44px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border-radius:12px;display:flex;align-items:center;justify-content:center;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#475569" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/><rect width="20" height="14" x="2" y="6" rx="2"/></svg></span><span style="font-weight:600;font-size:0.95rem;color:#0f172a;">Office Supplies</span></div></a></a>
+            <a href="directory.html" class="card"><div class="card-body" style="display:flex;align-items:center;gap:14px;padding:16px 18px;"><span style="flex-shrink:0;width:44px;height:44px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border-radius:12px;display:flex;align-items:center;justify-content:center;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#475569" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 9V7a2 2 0 0 0-2-2h-5"/><path d="M14 13V5a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-5"/><path d="M6 12h4"/><path d="M6 16h4"/><path d="M6 8h4"/></svg></span><span style="font-weight:600;font-size:0.95rem;color:#0f172a;">Furniture</span></div></a></a>
+            <a href="directory.html" class="card"><div class="card-body" style="display:flex;align-items:center;gap:14px;padding:16px 18px;"><span style="flex-shrink:0;width:44px;height:44px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border-radius:12px;display:flex;align-items:center;justify-content:center;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#475569" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="3" rx="2"/><line x1="8" x2="16" y1="21" y2="21"/><line x1="12" x2="12" y1="17" y2="21"/></svg></span><span style="font-weight:600;font-size:0.95rem;color:#0f172a;">Electronics</span></div></a></a>
+            <a href="directory.html" class="card"><div class="card-body" style="display:flex;align-items:center;gap:14px;padding:16px 18px;"><span style="flex-shrink:0;width:44px;height:44px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border-radius:12px;display:flex;align-items:center;justify-content:center;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#475569" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="m16 3 2 2 4-4"/></svg></span><span style="font-weight:600;font-size:0.95rem;color:#0f172a;">Machinery &amp; Tools</span></div></a></a>
+        </div>
+    </div>
+</section>
+
+
+    <section class="section" style="background:#fff;">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why EthioMarket?</h2>
+                <p>The smarter way to find suppliers and get quotes in Addis Ababa</p>
+            </div>
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;">
+                <div style="background:#fff;border:1px solid #e2e8f0;border-radius:14px;padding:24px;display:flex;gap:14px;align-items:flex-start;">
+                    <span style="flex-shrink:0;width:44px;height:44px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border-radius:12px;display:flex;align-items:center;justify-content:center;">&#10003;</span>
+                    <div><h4 style="font-weight:700;color:#0f172a;margin-bottom:4px;">Verified Businesses</h4><p style="font-size:0.88rem;color:#64748b;line-height:1.5;">Every supplier is manually reviewed and verified before appearing.</p></div>
+                </div>
+                <div style="background:#fff;border:1px solid #e2e8f0;border-radius:14px;padding:24px;display:flex;gap:14px;align-items:flex-start;">
+                    <span style="flex-shrink:0;width:44px;height:44px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border-radius:12px;display:flex;align-items:center;justify-content:center;">&#9993;</span>
+                    <div><h4 style="font-weight:700;color:#0f172a;margin-bottom:4px;">Direct Communication</h4><p style="font-size:0.88rem;color:#64748b;line-height:1.5;">Contact suppliers directly via WhatsApp, Telegram, or phone.</p></div>
+                </div>
+                <div style="background:#fff;border:1px solid #e2e8f0;border-radius:14px;padding:24px;display:flex;gap:14px;align-items:flex-start;">
+                    <span style="flex-shrink:0;width:44px;height:44px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border-radius:12px;display:flex;align-items:center;justify-content:center;">&#9998;</span>
+                    <div><h4 style="font-weight:700;color:#0f172a;margin-bottom:4px;">Compare Quotes</h4><p style="font-size:0.88rem;color:#64748b;line-height:1.5;">Receive offers from multiple suppliers and choose the best deal.</p></div>
+                </div>
+                <div style="background:#fff;border:1px solid #e2e8f0;border-radius:14px;padding:24px;display:flex;gap:14px;align-items:flex-start;">
+                    <span style="flex-shrink:0;width:44px;height:44px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border-radius:12px;display:flex;align-items:center;justify-content:center;">&#9675;</span>
+                    <div><h4 style="font-weight:700;color:#0f172a;margin-bottom:4px;">Save Time</h4><p style="font-size:0.88rem;color:#64748b;line-height:1.5;">Stop calling 20 shops. Post once and let verified sellers come to you.</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section class="section" style="background:#fff;">
+    <div class="container">
+        <div class="section-header">
+            <h2>Latest Buyer Requests</h2>
+            <a href="requests.html">View All &rarr;</a>
+        </div>
+        <div class="grid-3">
+            <a href="request-detail.html" class="card request-card urgent-today">
+                <div class="card-body">
+                    <div class="req-header">
+                        <div class="card-title">Need Toyota Vitz 2012 front bumper...</div>
+                        <span class="badge urgent-today">Urgent: Today</span>
+                    </div>
+                    <div class="req-meta">
+                        <span><strong>Car Parts &amp; Accessories</strong></span>
+                        <span>&#128205; Bole</span>
+                        <span>2 hours ago</span>
+                    </div>
+                    <div class="card-text">Looking for a genuine or good quality aftermarket front bumper for Toyota Vitz 2012 model...</div>
+                    <div style="margin-top:12px;font-size:0.85rem;color:var(--text-light);">3 quotes received</div>
+                </div>
+            </a>
+            <a href="request-detail.html" class="card request-card urgent-week">
+                <div class="card-body">
+                    <div class="req-header">
+                        <div class="card-title">Looking for 500 custom paper bags...</div>
+                        <span class="badge urgent-week">This Week</span>
+                    </div>
+                    <div class="req-meta">
+                        <span><strong>Printing &amp; Packaging</strong></span>
+                        <span>&#128205; Merkato</span>
+                        <span>5 hours ago</span>
+                    </div>
+                    <div class="card-text">Need kraft paper bags with our company logo printed in 2 colors. Size 30x40cm...</div>
+                    <div style="margin-top:12px;font-size:0.85rem;color:var(--text-light);">1 quote received</div>
+                </div>
+            </a>
+            <a href="request-detail.html" class="card request-card urgent-flex">
+                <div class="card-body">
+                    <div class="req-header">
+                        <div class="card-title">Need 100 bags of cement near CMC</div>
+                        <span class="badge urgent-flex">Flexible</span>
+                    </div>
+                    <div class="req-meta">
+                        <span><strong>Construction Materials</strong></span>
+                        <span>&#128205; CMC</span>
+                        <span>1 day ago</span>
+                    </div>
+                    <div class="card-text">Looking for Dangote or Dashen cement. Need delivery to construction site near CMC...</div>
+                    <div style="margin-top:12px;font-size:0.85rem;color:var(--text-light);">5 quotes received</div>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="section-header">
+            <h2>Featured Verified Suppliers</h2>
+            <a href="directory.html">View All &rarr;</a>
+        </div>
+        <div class="grid-3">
+            <a href="supplier.html" class="card supplier-card">
+                <div class="card-body">
+                    <div style="display:flex;align-items:center;gap:12px;margin-bottom:10px;">
+                        <div class="profile-logo" style="width:48px;height:48px;font-size:1.2rem;">A</div>
+                        <div>
+                            <div class="card-title" style="margin-bottom:2px;">ABC Auto Parts</div>
+                            <div style="display:flex;gap:6px;">
+                                <span class="badge badge-verified">&#10003; Verified</span>
+                                <span class="badge badge-premium">Featured</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="supplier-meta">
+                        <span>Car Parts &amp; Accessories</span>
+                        <span>&#128205; Bole</span>
+                    </div>
+                    <div class="card-text">Genuine and aftermarket Toyota, Hyundai, and Kia parts. Specializing in body parts, engines, and electrical...</div>
+                    <div class="card-actions"><span class="btn btn-sm btn-outline">View Profile</span></div>
+                </div>
+            </a>
+            <a href="supplier.html" class="card supplier-card">
+                <div class="card-body">
+                    <div style="display:flex;align-items:center;gap:12px;margin-bottom:10px;">
+                        <div class="profile-logo" style="width:48px;height:48px;font-size:1.2rem;">M</div>
+                        <div>
+                            <div class="card-title" style="margin-bottom:2px;">Megenagna Cement Supply</div>
+                            <div style="display:flex;gap:6px;">
+                                <span class="badge badge-verified">&#10003; Verified</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="supplier-meta">
+                        <span>Construction Materials</span>
+                        <span>&#128205; Megenagna</span>
+                    </div>
+                    <div class="card-text">Wholesale cement, rebar, and construction materials. Delivery available across Addis Ababa...</div>
+                    <div class="card-actions"><span class="btn btn-sm btn-outline">View Profile</span></div>
+                </div>
+            </a>
+            <a href="supplier.html" class="card supplier-card">
+                <div class="card-body">
+                    <div style="display:flex;align-items:center;gap:12px;margin-bottom:10px;">
+                        <div class="profile-logo" style="width:48px;height:48px;font-size:1.2rem;">P</div>
+                        <div>
+                            <div class="card-title" style="margin-bottom:2px;">PrintPro Ethiopia</div>
+                            <div style="display:flex;gap:6px;">
+                                <span class="badge badge-verified">&#10003; Verified</span>
+                                <span class="badge badge-premium">Featured</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="supplier-meta">
+                        <span>Printing &amp; Packaging</span>
+                        <span>&#128205; Piassa</span>
+                    </div>
+                    <div class="card-text">Custom packaging, paper bags, labels, and commercial printing. From design to delivery...</div>
+                    <div class="card-actions"><span class="btn btn-sm btn-outline">View Profile</span></div>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+
+<section class="section" style="background:#fff;">
+    <div class="container">
+        <div class="section-header">
+            <h2>How It Works</h2>
+        </div>
+        <div class="grid-3" style="text-align:center;">
+            <div class="card" style="padding:32px 24px;">
+                <div style="margin-bottom:14px;"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg></div>
+                <div class="card-title">Search or Post</div>
+                <p class="card-text">Find verified suppliers by category and location, or post exactly what you need.</p>
+            </div>
+            <div class="card" style="padding:32px 24px;">
+                <div style="margin-bottom:14px;"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg></div>
+                <div class="card-title">Get Quotes</div>
+                <p class="card-text">Suppliers browse your request and reply with prices and delivery details via WhatsApp or Telegram.</p>
+            </div>
+            <div class="card" style="padding:32px 24px;">
+                <div style="margin-bottom:14px;"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--success)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg></div>
+                <div class="card-title">Compare &amp; Choose</div>
+                <p class="card-text">Compare multiple quotes, check supplier reviews, and pick the best deal.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" style="background:linear-gradient(135deg, #0F2A43, #1a3d5c); color:#fff; text-align:center;">
+    <div class="container">
+        <h2 style="font-size:1.8rem; margin-bottom:12px;">Are You a Supplier?</h2>
+        <p style="opacity:0.85; max-width:500px; margin:0 auto 24px;">List your business, reach new buyers, and grow your sales in Addis Ababa.</p>
+        <a href="register.html" class="btn btn-lg btn-accent">List Your Business for Free</a>
+    </div>
+</section>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h3>EthioMarket</h3>
+                    <p>Find verified Ethiopian suppliers. Post what you need. Compare quotes.</p>
+                </div>
+                <div>
+                    <h4>Buyers</h4>
+                    <a href="directory.html">Search Suppliers</a>
+                    <a href="post-request.html">Post a Request</a>
+                    <a href="requests.html">Request Board</a>
+                </div>
+                <div>
+                    <h4>Suppliers</h4>
+                    <a href="register.html">List Your Business</a>
+                    <a href="pricing.html">Pricing</a>
+                </div>
+                <div>
+                    <h4>Support</h4>
+                    <a href="#">How It Works</a>
+                    <a href="#">Contact Us</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 EthioMarket. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

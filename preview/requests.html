@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<title>Buyer Request Board - EthioMarket</title></head><body>    <nav class="navbar">
+        <div class="container nav-inner">
+            <a href="index.html" class="logo">
+                <span class="logo-icon"></span>
+                <span>EthioMarket</span>
+            </a>
+            <button class="mobile-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Toggle menu">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+            </button>
+            <div class="nav-links">
+                <a href="directory.html">Suppliers</a>
+                <a href="requests.html">Requests</a>
+                <a href="post-request.html" class="btn btn-sm btn-accent" style="color:#fff;">+ Post a Request</a>
+                <a href="login.html">Login</a>
+                <a href="register.html" class="btn btn-sm btn-outline">Sign Up</a>
+            </div>
+        </div>
+    </nav>
+    <div class="main-content">
+
+<section class="section" style="background:#fff;padding-bottom:20px;">
+    <div class="container">
+        <div class="section-header">
+            <h2>Buyer Request Board</h2>
+            <a href="post-request.html" class="btn btn-sm btn-accent">+ Post a Request</a>
+        </div>
+        <form method="GET" class="filters">
+            <div class="form-group"><input type="text" name="q" placeholder="Search requests..." value=""></div>
+            <div class="form-group">
+                <select name="category">
+                    <option value="">All Categories</option>
+                    <option value="1">Car Parts &amp; Accessories</option>
+                    <option value="2">Construction Materials</option>
+                    <option value="3">Printing &amp; Packaging</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <select name="location">
+                    <option value="">All Locations</option>
+                    <option value="1">Bole</option>
+                    <option value="2">Kazanchis</option>
+                    <option value="3">Piassa</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <select name="urgency">
+                    <option value="">Any Urgency</option>
+                    <option value="today">Urgent: Today</option>
+                    <option value="this_week">This Week</option>
+                    <option value="flexible">Flexible</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Filter</button>
+            <a href="requests.html" class="btn btn-outline">Clear</a>
+        </form>
+    </div>
+</section>
+
+<section class="section" style="padding-top:0;">
+    <div class="container">
+        <div class="grid-2">
+            <div class="card request-card urgent-today">
+                <div class="card-body">
+                    <div class="req-header">
+                        <div>
+                            <div class="card-title">Need Toyota Vitz 2012 front bumper, new or used</div>
+                            <div style="display:flex;gap:6px;margin-top:4px;">
+                                <span class="badge urgent-today">Urgent: Today</span>
+                                <span class="badge badge-premium">&#11088; Pinned</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="req-meta">
+                        <span><strong>Car Parts &amp; Accessories</strong></span>
+                        <span>&#128205; Bole</span>
+                        <span>&#128207; 1 piece</span>
+                        <span>&#128176; Budget: 3,000 - 5,000 ETB</span>
+                        <span>&#9201; 2 hours ago</span>
+                    </div>
+                    <div class="card-text">Looking for a genuine or good quality aftermarket front bumper for Toyota Vitz 2012 model. Color silver preferred but can repaint. Need it delivered to Bole today if possible.</div>
+                    <div style="display:flex;gap:10px;margin-top:16px;">
+                        <a href="request-detail.html" class="btn btn-primary">View Details</a>
+                        <span style="font-size:0.85rem;color:var(--text-light);display:flex;align-items:center;">3 quotes</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card request-card urgent-week">
+                <div class="card-body">
+                    <div class="req-header">
+                        <div>
+                            <div class="card-title">Looking for 500 custom paper bags with logo printing</div>
+                            <div style="display:flex;gap:6px;margin-top:4px;"><span class="badge urgent-week">This Week</span></div>
+                        </div>
+                    </div>
+                    <div class="req-meta">
+                        <span><strong>Printing &amp; Packaging</strong></span>
+                        <span>&#128205; Merkato</span>
+                        <span>&#128207; 500 bags</span>
+                        <span>&#128176; Budget: 15,000 ETB</span>
+                        <span>&#9201; 5 hours ago</span>
+                    </div>
+                    <div class="card-text">Need kraft paper bags with our company logo printed in 2 colors. Size 30x40cm with handles. Delivery to Kazanchis by Friday.</div>
+                    <div style="display:flex;gap:10px;margin-top:16px;">
+                        <a href="request-detail.html" class="btn btn-primary">View Details</a>
+                        <span style="font-size:0.85rem;color:var(--text-light);display:flex;align-items:center;">1 quote</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card request-card urgent-flex">
+                <div class="card-body">
+                    <div class="req-header">
+                        <div>
+                            <div class="card-title">Need 100 bags of cement near CMC</div>
+                            <div style="display:flex;gap:6px;margin-top:4px;"><span class="badge urgent-flex">Flexible</span></div>
+                        </div>
+                    </div>
+                    <div class="req-meta">
+                        <span><strong>Construction Materials</strong></span>
+                        <span>&#128205; CMC</span>
+                        <span>&#128207; 100 bags</span>
+                        <span>&#128176; Budget: negotiable</span>
+                        <span>&#9201; 1 day ago</span>
+                    </div>
+                    <div class="card-text">Looking for Dangote or Dashen cement. Need delivery to construction site near CMC. Will need regular supply (200+ bags monthly).</div>
+                    <div style="display:flex;gap:10px;margin-top:16px;">
+                        <a href="request-detail.html" class="btn btn-primary">View Details</a>
+                        <span style="font-size:0.85rem;color:var(--text-light);display:flex;align-items:center;">5 quotes</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card request-card urgent-flex">
+                <div class="card-body">
+                    <div class="req-header">
+                        <div>
+                            <div class="card-title">Need 30 office chairs for a company</div>
+                            <div style="display:flex;gap:6px;margin-top:4px;"><span class="badge urgent-flex">Flexible</span></div>
+                        </div>
+                    </div>
+                    <div class="req-meta">
+                        <span><strong>Furniture</strong></span>
+                        <span>&#128205; Kazanchis</span>
+                        <span>&#128207; 30 chairs</span>
+                        <span>&#128176; Budget: 45,000 ETB</span>
+                        <span>&#9201; 2 days ago</span>
+                    </div>
+                    <div class="card-text">Looking for ergonomic office chairs with wheels and adjustable height. Black or grey color. Need delivery and assembly at our office in Kazanchis.</div>
+                    <div style="display:flex;gap:10px;margin-top:16px;">
+                        <a href="request-detail.html" class="btn btn-primary">View Details</a>
+                        <span style="font-size:0.85rem;color:var(--text-light);display:flex;align-items:center;">2 quotes</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h3>EthioMarket</h3>
+                    <p>Find verified Ethiopian suppliers. Post what you need. Compare quotes.</p>
+                </div>
+                <div>
+                    <h4>Buyers</h4>
+                    <a href="directory.html">Search Suppliers</a>
+                    <a href="post-request.html">Post a Request</a>
+                    <a href="requests.html">Request Board</a>
+                </div>
+                <div>
+                    <h4>Suppliers</h4>
+                    <a href="register.html">List Your Business</a>
+                    <a href="pricing.html">Pricing</a>
+                </div>
+                <div>
+                    <h4>Support</h4>
+                    <a href="#">How It Works</a>
+                    <a href="#">Contact Us</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 EthioMarket. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

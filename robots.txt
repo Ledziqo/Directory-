@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+
+# Disallow admin and private areas
+Disallow: /admin/
+Disallow: /pages/dashboard.php
+Disallow: /pages/save-supplier.php
+Disallow: /includes/
+
+# Sitemap
+Sitemap: https://ethiomarket.com/sitemap.xml
+
+# Crawl rate
+Crawl-delay: 1
