@@ -2,8 +2,8 @@
 require_once 'includes/db.php';
 require_once 'includes/functions.php';
 
-$pageTitle = 'Find Suppliers or Post What You Need';
-$pageDescription = 'EthioMarket is Ethiopia\'s leading supplier directory. Find verified businesses in Addis Ababa, post buyer requests, and get quotes via WhatsApp or Telegram.';
+$pageTitle = 'Ethiopia\'s Gateway for Importers & Exporters';
+$pageDescription = 'Source products from Ethiopia or find buyers abroad. Verified suppliers, manufacturers, and export-ready businesses in Addis Ababa.';
 
 // Get stats for JSON-LD and display
 $categoryCount = count(getCategories($pdo));
@@ -145,19 +145,19 @@ require_once 'includes/header.php';
     <div class="container">
         <div class="hero-layout">
             <div class="hero-copy">
-                <span class="eyebrow">Ethiopian supplier network</span>
-                <h1>Find trusted suppliers faster.</h1>
-                <p>Search businesses by category and location, or post one request and compare seller responses.</p>
+                <span class="eyebrow">Import & Export Hub</span>
+                <h1>Find verified Ethiopian suppliers. Or buyers abroad.</h1>
+                <p>Connect with export-ready manufacturers, wholesale suppliers, and verified businesses in Addis Ababa. Built for importers who need reliable partners.</p>
                 <div class="hero-buttons">
-                    <a href="/pages/directory.php" class="btn btn-lg btn-accent">Search Suppliers</a>
-                    <a href="/pages/post-request.php" class="btn btn-lg btn-outline">Post a Request</a>
+                    <a href="/pages/directory.php" class="btn btn-lg btn-accent">Find Suppliers</a>
+                    <a href="/pages/post-request.php" class="btn btn-lg btn-outline">Source Products</a>
                 </div>
                 <div class="hero-contact" aria-label="Contact methods available between buyers and sellers">
                     <span class="hero-contact-link">
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                             <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
                         </svg>
-                        WhatsApp and Telegram contact built in
+                        Verified exporters on Telegram & WhatsApp
                     </span>
                 </div>
                 
@@ -286,8 +286,8 @@ require_once 'includes/header.php';
     <div class="container">
         <div class="section-header animate-on-scroll">
             <div>
-                <h2 id="why-heading">Why EthioMarket?</h2>
-                <p>The smarter way to find suppliers and get quotes in Addis Ababa</p>
+                <h2 id="why-heading">Built for Serious Buyers</h2>
+                <p>Whether you're sourcing from Dubai, importing to Ethiopia, or exporting coffee — find partners you can trust.</p>
             </div>
         </div>
         <div class="grid-2">

@@ -16,56 +16,62 @@ require_once '../includes/header.php';
 
 <section class="section" style="padding-top:20px;">
     <div class="container">
-        <div class="pricing-grid" style="max-width:900px; margin-left:auto; margin-right:auto;">
+        <div class="pricing-grid" style="max-width:1000px; margin-left:auto; margin-right:auto; align-items:stretch;">
             <!-- Free Plan -->
-            <div class="pricing-card">
-                <div class="plan-name">Free</div>
-                <div class="plan-price">Free</div>
-                <div class="plan-period">Just get listed</div>
-                <ul>
-                    <li>Basic business profile</li>
-                    <li>1 photo only</li>
-                    <li>Appear in general search (bottom of list)</li>
-                    <li>Receive quotes manually</li>
-                    <li>No verification badge (looks unverified)</li>
-                    <li style="color:var(--text-light); text-decoration:line-through;">No priority placement</li>
-                </ul>
-                <a href="register.php" class="btn btn-outline" style="width:100%;">Start Free</a>
+            <div class="pricing-card" style="display:flex; flex-direction:column;">
+                <div>
+                    <div class="plan-name" style="color:var(--text-light);">Free</div>
+                    <div class="plan-price" style="font-size:1.8rem;">Free</div>
+                    <div class="plan-period">Just get listed</div>
+                    <ul style="margin-bottom:24px;">
+                        <li>Basic business profile</li>
+                        <li>1 photo only</li>
+                        <li>Appear in general search (bottom of list)</li>
+                        <li>Receive quotes manually</li>
+                        <li>No verification badge</li>
+                        <li style="color:var(--text-light); text-decoration:line-through;">No priority placement</li>
+                    </ul>
+                </div>
+                <a href="register.php" class="btn btn-outline" style="width:100%; margin-top:auto;">Start Free</a>
             </div>
 
             <!-- Verified Plan - 1200 ETB -->
-            <div class="pricing-card featured">
-                <div class="plan-name">Verified</div>
-                <div class="plan-price">1,200 ETB</div>
-                <div class="plan-period">per month</div>
-                <ul>
-                    <li style="color:var(--success); font-weight:600;">&#10004; Verified blue checkmark — buyers trust you instantly</li>
-                    <li>&#10004; <strong>Up to 8 photos</strong> — showroom your products, not just 1</li>
-                    <li>&#10004; <strong>Priority search ranking</strong> — appear above free listings</li>
-                    <li>&#10004; <strong>WhatsApp & Telegram buttons</strong> — buyers contact you in 1 tap</li>
-                    <li>&#10004; <strong>Collect reviews</strong> — build social proof that sells</li>
-                    <li>&#10004; <strong>Buyer request board access</strong> — reach out to active buyers first</li>
-                    <li>&#10004; <strong>Verified supplier badge</strong> on every page</li>
-                </ul>
-                <a href="register.php" class="btn btn-accent" style="width:100%;">Get Verified — 1,200 ETB</a>
+            <div class="pricing-card featured" style="display:flex; flex-direction:column; transform:scale(1.03);">
+                <div>
+                    <div class="plan-name">Verified</div>
+                    <div class="plan-price">1,200 <span style="font-size:0.6em; color:var(--text-light);">ETB/mo</span></div>
+                    <div class="plan-period">Most popular for exporters</div>
+                    <ul style="margin-bottom:24px;">
+                        <li style="color:var(--success); font-weight:600;">&#10004; Verified blue checkmark</li>
+                        <li>&#10004; <strong>Up to 8 photos</strong></li>
+                        <li>&#10004; <strong>Priority search ranking</strong></li>
+                        <li>&#10004; <strong>WhatsApp & Telegram buttons</strong></li>
+                        <li>&#10004; <strong>Collect reviews</strong></li>
+                        <li>&#10004; <strong>Buyer request board access</strong></li>
+                        <li>&#10004; <strong>Verified supplier badge</strong></li>
+                    </ul>
+                </div>
+                <a href="register.php" class="btn btn-accent" style="width:100%; margin-top:auto;">Get Verified — 1,200 ETB</a>
             </div>
 
             <!-- Premium Plan - 2000 ETB -->
-            <div class="pricing-card" style="border-color:var(--accent); border-width:2px;">
-                <div class="plan-name" style="color:var(--accent);">Premium</div>
-                <div class="plan-price" style="color:var(--accent);">2,000 ETB</div>
-                <div class="plan-period">per month</div>
-                <ul>
-                    <li style="color:var(--success); font-weight:600;">&#9733; <strong>Featured on homepage</strong> — everyone sees you first</li>
-                    <li>&#9733; <strong>Top of category pages</strong> — beat every competitor</li>
-                    <li>&#9733; <strong>Up to 20 photos</strong> — full catalog showcase</li>
-                    <li>&#9733; <strong>Profile analytics</strong> — see who viewed you, when, from where</li>
-                    <li>&#9733; <strong>"Featured" gold badge</strong> — premium status buyers notice</li>
-                    <li>&#9733; <strong>Daily quote alerts</strong> — new requests sent to your Telegram</li>
-                    <li>&#9733; <strong>Support priority</strong> — we reply to you in minutes, not hours</li>
-                    <li>&#9733; <strong>Everything in Verified</strong> included</li>
-                </ul>
-                <a href="register.php" class="btn btn-primary" style="width:100%;">Go Premium — 2,000 ETB</a>
+            <div class="pricing-card" style="border-color:var(--accent); border-width:2px; display:flex; flex-direction:column;">
+                <div>
+                    <div class="plan-name" style="color:var(--accent);">Premium</div>
+                    <div class="plan-price" style="color:var(--accent);">2,000 <span style="font-size:0.6em; color:var(--text-light);">ETB/mo</span></div>
+                    <div class="plan-period">For serious exporters</div>
+                    <ul style="margin-bottom:24px;">
+                        <li style="color:var(--success); font-weight:600;">&#9733; <strong>Featured on homepage</strong></li>
+                        <li>&#9733; <strong>Top of category pages</strong></li>
+                        <li>&#9733; <strong>Up to 20 photos</strong></li>
+                        <li>&#9733; <strong>Profile analytics</strong></li>
+                        <li>&#9733; <strong>"Featured" gold badge</strong></li>
+                        <li>&#9733; <strong>Daily quote alerts</strong></li>
+                        <li>&#9733; <strong>Priority support</strong></li>
+                        <li>&#9733; <strong>Everything in Verified</strong></li>
+                    </ul>
+                </div>
+                <a href="register.php" class="btn btn-primary" style="width:100%; margin-top:auto;">Go Premium — 2,000 ETB</a>
             </div>
         </div>
 
