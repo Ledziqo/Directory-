@@ -3,8 +3,8 @@ session_start();
 
 // Hostinger MySQL credentials
 $host = 'localhost';
-$db   = 'Directory';
-$user = 'Aesliexx';
+$db   = 'u409029281_Directory';
+$user = 'u409029281_Aesliexx';
 $pass = 'Aesliex2005';
 $charset = 'utf8mb4';
 
